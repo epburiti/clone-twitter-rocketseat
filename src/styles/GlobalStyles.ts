@@ -27,11 +27,11 @@ export default createGlobalStyle `
     background:var(--primary);
   }
   :root {
-    --primary: #000;
+    --primary: #15202b;
     --secondary: #15181C;
     --search: #202327;
     --white: #D9D9D9;
-    --gray: #7A7A7A;
+    --gray: #8899a6;
     --outline: #2F3336;
     --retweet: #00C06B;
     --like: #E8265E;

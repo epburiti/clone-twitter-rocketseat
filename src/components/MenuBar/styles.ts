@@ -10,6 +10,9 @@ import {
   Rocketseat,
 } from '../../styles/icons';
 
+import Background from "../../assets/perfil-img.png";
+
+
 export const Container = styled.div`
   display: none;
   @media (min-width: 500px) {
@@ -128,7 +131,10 @@ export const Avatar = styled.div`
   height: 39px;
   flex-shrink: 0;
   border-radius: 50%;
-  background: var(--gray);
+  /* background: var(--gray); */
+  background-image: url(${Background});
+  background-position: center;
+  background-size: cover;
 `;
 
 export const ProfileData = styled.div`

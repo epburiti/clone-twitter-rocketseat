@@ -1,18 +1,18 @@
 import React from 'react';
 
-import { 
+import ProfilePage from '../ProfilePage';
+
+import {
   Container,
   Header,
   BackIcon,
   ProfileInfo,
-  BottonMenu,
+  BottomMenu,
   HomeIcon,
   SearchIcon,
   BellIcon,
-  EmailIcon 
+  EmailIcon,
 } from './styles';
-
-import ProfilePage from '../ProfilePage/index';
 
 const Main: React.FC = () => {
   return (
@@ -23,21 +23,21 @@ const Main: React.FC = () => {
         </button>
 
         <ProfileInfo>
-          <strong>Nome usuário</strong>
-          <span>312 twitts</span>
+          <strong>Erick Buriti</strong>
+          <span>20 Tweets</span>
         </ProfileInfo>
       </Header>
 
       <ProfilePage />
 
-      <BottonMenu>
-        <HomeIcon className="active"/>
-        <SearchIcon/>
-        <BellIcon/>
-        <EmailIcon/>
-      </BottonMenu>
+      <BottomMenu>
+        <HomeIcon className="active" />
+        <SearchIcon />
+        <BellIcon />
+        <EmailIcon />
+      </BottomMenu>
     </Container>
   );
-}
+};
 
 export default Main;

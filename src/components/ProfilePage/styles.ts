@@ -3,6 +3,9 @@ import styled, { css } from 'styled-components';
 import { LocationOn, Cake } from '../../styles/icons';
 import Button from '../Button';
 
+
+import Background from "../../assets/perfil-img.png";
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -18,7 +21,7 @@ export const Banner = styled.div`
   flex-shrink: 0;
   width: 100%;
   height: min(33vw, 199px);
-  background: var(--twitter);
+  background: #3d5466;
   position: relative;
 `;
 
@@ -26,7 +29,10 @@ export const Avatar = styled.div`
   width: max(45px, min(135px, 22vw));
   height: max(45px, min(135px, 22vw));
   border: 3.75px solid var(--primary);
-  background: var(--gray);
+  /* background: var(--gray);*/
+  background-image: url(${Background});
+  background-position: center;
+  background-size: cover;
   border-radius: 50%;
   position: absolute;
   bottom: max(-60px, -10vw);
